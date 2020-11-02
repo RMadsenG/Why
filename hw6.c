@@ -57,11 +57,11 @@ int main(int argc,char **argv) {
   
   //I ran the bash script once for selec,merge, int_radix, and float_radix
   
-    printf("selection sort\n");
-    selection_sort(lst,n);
+    //printf("selection sort\n");
+    //selection_sort(lst,n);
     
-    //printf("merge sort\n");
-    //merge_sort(lst,buf,n);
+    printf("merge sort\n");
+    merge_sort(lst,buf,n);
     
     //printf("int radix sort\n");
     //int_radix_sort(lst,buf,n);
@@ -70,10 +70,10 @@ int main(int argc,char **argv) {
     //float_radix_sort(lst,buf,n);
   
   //printf("\n");  Nessecary to prevent Segfault
-  //gettimeofday(&tv_e); 
+  gettimeofday(&tv_e); 
   //printf("\n");
 
-  int mil=0;//getMillis(tv_s,tv_e);
+  int mil=getMillis(tv_s,tv_e);
   //print_lst(lst,n);
   self_check(lst,n);
   self_check(buf,n);
