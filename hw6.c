@@ -60,11 +60,11 @@ int main(int argc,char **argv) {
     //printf("selection sort\n");
     //selection_sort(lst,n);
     
-    printf("merge sort\n");
-    merge_sort(lst,buf,n);
+    //printf("merge sort\n");
+    //merge_sort(lst,buf,n);
     
-    //printf("int radix sort\n");
-    //int_radix_sort(lst,buf,n);
+    printf("int radix sort\n");
+    int_radix_sort(lst,buf,n);
     
     //printf("float radix sort\n");
     //float_radix_sort(lst,buf,n);
