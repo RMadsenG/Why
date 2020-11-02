@@ -70,10 +70,10 @@ int main(int argc,char **argv) {
     //float_radix_sort(lst,buf,n);
   
   //printf("\n");  Nessecary to prevent Segfault
-  gettimeofday(&tv_e); 
-  printf("\n");
+  //gettimeofday(&tv_e); 
+  //printf("\n");
 
-  int mil=getMillis(tv_s,tv_e);
+  int mil=0;//getMillis(tv_s,tv_e);
   //print_lst(lst,n);
   self_check(lst,n);
   self_check(buf,n);
