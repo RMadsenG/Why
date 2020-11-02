@@ -69,9 +69,11 @@ int main(int argc,char **argv) {
     //printf("float radix sort\n");
     //float_radix_sort(lst,buf,n);
   
-  
+  //printf("\n");  Nessecary to prevent Segfault
   gettimeofday(&tv_e); 
-  int mil= getMillis(tv_s,tv_e);
+  printf("\n");
+
+  int mil=getMillis(tv_s,tv_e);
   //print_lst(lst,n);
   self_check(lst,n);
   self_check(buf,n);
@@ -97,7 +99,6 @@ void selection_sort(int lst[],int n){
     int temp=lst[min];
     lst[min]=lst[i];
     lst[i]=temp;
-    //printf("%d",lst[n-1]);
   }
 }
 
